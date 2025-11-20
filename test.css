@@ -1,0 +1,906 @@
+/* ============================================
+   BASE STYLES - Desktop First Approach
+   ============================================ */
+
+.desktop-about-page {
+  background-color: #fff;
+  width: 100%;
+  min-width: 320px;
+  min-height: 1344px;
+  position: relative;
+}
+
+/* ============================================
+   HERO SECTION - Background Image
+   ============================================ */
+
+.desktop-about-page .about-BG {
+  position: absolute;
+  top: 0;
+  left: 730px;
+  width: 710px;
+  height: 1024px;
+  object-fit: cover;
+}
+
+/* White Gradient Overlay */
+.desktop-about-page .rectangle {
+  position: absolute;
+  top: calc(50% - 803px);
+  right: 0;
+  width: 866px;
+  height: 1155px;
+  background: linear-gradient(
+    89deg,
+    #fff 0%,
+    rgba(255, 255, 255, 0.8) 30%,
+    rgba(255, 255, 255, 0.4) 60%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  pointer-events: none;
+}
+
+/* ============================================
+   FOOTER SECTION
+   ============================================ */
+
+.desktop-about-page .desktop-footer {
+  position: absolute;
+  top: 1024px;
+  left: 0;
+  width: 100%;
+  height: 320px;
+  box-shadow: 0 -7px 4px #00000040;
+  background: linear-gradient(90deg, #0e2215 0%, #19813c 100%);
+}
+
+/* Footer Logo */
+.desktop-about-page .icon {
+  position: absolute;
+  top: 42px;
+  left: 83px;
+  width: 256px;
+  height: 182px;
+  object-fit: cover;
+}
+
+/* Footer Social Icons - Combined */
+.desktop-about-page .facebook,
+.desktop-about-page .phone,
+.desktop-about-page .email,
+.desktop-about-page .location {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+}
+.desktop-about-page .facebook {top: 237px; left: 153px;}
+.desktop-about-page .phone {
+  top: 237px;
+  left: 80px;
+}
+.desktop-about-page .email {
+  top: 236px;
+  left: 230px;
+}
+.desktop-about-page .location {
+  top: calc(50% + 79px);
+  left: calc(50% - 417px);
+}
+
+/* Footer Content Container */
+.desktop-about-page .div {
+  position: absolute;
+  top: 30px;
+  left: 428px;
+  width: 934px;
+  height: 271px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  background: linear-gradient(
+    90deg,
+    #173e24 0%,
+    #2a7142 73%,
+    #2e7747 98%
+  );
+}
+
+/* ============================================
+   FOOTER NAVIGATION COLUMNS
+   ============================================ */
+
+/* Column containers - Combined */
+.desktop-about-page .resources,
+.desktop-about-page .products,
+.desktop-about-page .company {
+  position: absolute;
+  top: 49px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Resources Column */
+.desktop-about-page .resources {
+  left: 1100px;
+  width: 174px;
+  height: 175px;
+}
+
+/* Titles - Combined */
+.desktop-about-page .section-title,
+.desktop-about-page .company-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 166px;
+  font: 700 24px/normal "Inter", Helvetica;
+  color: #fff;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+.desktop-about-page .section-title {
+  height: 26.67px;
+}
+.desktop-about-page .company-title {
+  height: 25.85px;
+}
+
+/* Resource Links - Combined Properties */
+.desktop-about-page .terms-condition,
+.desktop-about-page .privacy-policy,
+.desktop-about-page .cookies-policy,
+.desktop-about-page .product-cabinets,
+.desktop-about-page .product-tables,
+.desktop-about-page .product-beds,
+.desktop-about-page .company-about,
+.desktop-about-page .company-services,
+.desktop-about-page .company-contact,
+.desktop-about-page .company-faqs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 700 16px/normal "Inter", Helvetica;
+  color: #fff;
+  letter-spacing: 0;
+}
+
+.desktop-about-page .terms-condition,
+.desktop-about-page .privacy-policy,
+.desktop-about-page .cookies-policy {
+  width: 166px;
+  height: 39.69px;
+}
+.desktop-about-page .terms-condition {
+  margin-top: 16.3px;
+}
+.desktop-about-page .privacy-policy {
+  margin-top: 5.3px;
+}
+.desktop-about-page .cookies-policy {
+  margin-top: 7.3px;
+}
+
+/* Products Column */
+.desktop-about-page .products {
+  left: 822px;
+  width: 174px;
+  height: 169px;
+}
+
+.desktop-about-page .product-cabinets,
+.desktop-about-page .product-tables,
+.desktop-about-page .product-beds {
+  width: 110.67px;
+  height: 26.67px;
+}
+.desktop-about-page .product-cabinets {
+  margin-top: 23.3px;
+}
+.desktop-about-page .product-tables {
+  margin-left: 1px;
+  margin-top: 18.3px;
+}
+.desktop-about-page .product-beds {
+  margin-left: 1px;
+  margin-top: 20.3px;
+}
+
+/* Company Column */
+.desktop-about-page .company {
+  left: 544px;
+  width: 176px;
+  height: 213px;
+}
+
+.desktop-about-page .company-about,
+.desktop-about-page .company-services,
+.desktop-about-page .company-contact {
+  width: 104.84px;
+  height: 25.85px;
+}
+.desktop-about-page .company-about {
+  margin-left: 1px;
+  margin-top: 24.2px;
+}
+.desktop-about-page .company-services {
+  margin-top: 19.2px;
+}
+.desktop-about-page .company-contact {
+  margin-top: 21.2px;
+}
+.desktop-about-page .company-faqs {
+  margin-left: 1px;
+  width: 111.7px;
+  height: 26.67px;
+  margin-top: 18.2px;
+}
+
+/* Footer Copyright */
+.desktop-about-page .lower {
+  position: absolute;
+  top: 275px;
+  left: 72px;
+  width: 280px;
+  height: 40px;
+  display: flex;
+}
+
+.desktop-about-page .copyright-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 278px;
+  height: 40px;
+  font: 700 12px/normal "Inter", Helvetica;
+  color: #fff;
+  letter-spacing: 0;
+}
+
+/* ============================================
+   MAIN CONTENT SECTION - About Text
+   ============================================ */
+
+.desktop-about-page .group {
+  position: absolute;
+  top: 113px;
+  left: 120px;
+  width: 767px;
+  height: 738px;
+}
+
+.desktop-about-page .intro-paragraph,
+.desktop-about-page .mission {
+  position: absolute;
+  left: 0;
+  width: 758px;
+  font: 400 16px/30px "Inter", Helvetica;
+  color: #1e5631;
+  text-align: justify;
+  letter-spacing: 0.8px;
+}
+
+.desktop-about-page .intro-paragraph {
+  top: calc(50% - 232px);
+}
+
+.desktop-about-page .mission {
+  top: calc(50% + 250px);
+  left: 1px;
+}
+
+.desktop-about-page .tagline {
+  position: absolute;
+  top: 107px;
+  left: 0;
+  width: 659px;
+  font: italic 600 20px/30px "Inter", Helvetica;
+  color: #1e5631;
+  text-align: justify;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.desktop-about-page .page-heading {
+  position: absolute;
+  top: 0;
+  left: 88px;
+  width: 584px;
+  height: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 700 28px/normal "Inter", Helvetica;
+  color: #1e5631;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+/* ============================================
+   FEATURE CARDS SECTION
+   ============================================ */
+
+/* Card Containers - Combined */
+.desktop-about-page .group-2,
+.desktop-about-page .group-4,
+.desktop-about-page .group-6 {
+  position: absolute;
+  top: 403px;
+  width: 235px;
+  height: 351px;
+}
+.desktop-about-page .group-2 {
+  left: 654px;
+}
+.desktop-about-page .group-4 {
+  left: 387px;
+}
+.desktop-about-page .group-6 {
+  left: 120px;
+}
+
+.desktop-about-page .component {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 235px;
+  height: 351px;
+  border-radius: 10px;
+  background: linear-gradient(0deg, #b5b5b533 0%, #b5b5b533 100%);
+}
+
+/* Inner Groups - Combined */
+.desktop-about-page .group-3,
+.desktop-about-page .group-5,
+.desktop-about-page .group-7 {
+  position: absolute;
+  top: 23px;
+  left: 25px;
+  width: 189px;
+}
+
+/* Card 1 - Craftsmanship & Durability */
+.desktop-about-page .group-3 {
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+}
+
+.desktop-about-page .durable {
+  margin-left: 58px;
+  width: 69px;
+  height: 69px;
+  object-fit: cover;
+}
+
+.desktop-about-page .craftsmanship {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  width: 166px;
+  height: 10px;
+  margin-top: 30px;
+  font: 600 20px/18px "Inter", Helvetica;
+  color: #1e5631;
+  text-align: center;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.desktop-about-page .every-piece-is-built {
+  width: 185px;
+  height: 167px;
+  margin-top: 28px;
+  font: 400 16px/30px "Inter", Helvetica;
+  color: #1e5631;
+  text-align: justify;
+  letter-spacing: 0.8px;
+}
+
+/* Card 2 - Wide Selection */
+.desktop-about-page .group-5 {
+  height: 296px;
+  display: flex;
+  flex-direction: column;
+}
+
+.desktop-about-page .select {
+  margin-left: 70px;
+  width: 47px;
+  height: 69px;
+  object-fit: cover;
+}
+
+.desktop-about-page .wide-selection {
+  width: 181px;
+  height: 26px;
+  margin-top: 21px;
+  font: 600 20px/30px "Inter", Helvetica;
+  color: #1e5631;
+  text-align: center;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.desktop-about-page .from-sofa-beds-and {
+  margin-left: 2px;
+  width: 183px;
+  height: 165px;
+  margin-top: 15px;
+  font: 400 16px/30px "Inter", Helvetica;
+  color: #1e5631;
+  text-align: justify;
+  letter-spacing: 0.8px;
+}
+
+/* Card 3 - Quality & Style */
+.desktop-about-page .group-7 {
+  height: 289px;
+  left: 26px;
+}
+
+.desktop-about-page .quality-style {
+  position: absolute;
+  top: 89px;
+  left: 13px;
+  font: 600 20px/30px "Inter", Helvetica;
+  color: #1e5631;
+  text-align: center;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.desktop-about-page .we-provide-high {
+  position: absolute;
+  top: 130px;
+  left: 0;
+  width: 183px;
+  font: 400 16px/30px "Inter", Helvetica;
+  color: #1e5631;
+  text-align: justify;
+  letter-spacing: 0.8px;
+}
+
+.desktop-about-page .quality {
+  position: absolute;
+  top: 0;
+  left: 49px;
+  width: 75px;
+  height: 69px;
+  object-fit: cover;
+}
+
+/* ============================================
+   NAVIGATION BAR
+   ============================================ */
+
+.desktop-about-page .deskop-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  border: 1px solid #000;
+  box-shadow: 0 4px 4px #00000040;
+  background: linear-gradient(90deg, #0e2215 0%, #19803c 100%);
+  z-index: 1000;
+}
+
+/* Navbar Logo */
+.desktop-about-page .illustration {
+  margin: 7px 0 0 107px;
+  width: 76px;
+  height: 57px;
+  object-fit: cover;
+}
+
+/* Navbar Buttons - Combined */
+.desktop-about-page .home-button,
+.desktop-about-page .about-button,
+.desktop-about-page .products-button,
+.desktop-about-page .services-button {
+  display: flex;
+  cursor: pointer;
+}
+.desktop-about-page .home-button {
+  all: unset;
+  box-sizing: border-box;
+  margin: 18px 0 0 328px;
+  width: 92px;
+  height: 32px;
+  display: flex;
+  gap: 6px;
+}
+.desktop-about-page .about-button {
+  margin: 19px 0 0 18px;
+  width: 90.7px;
+  height: 31px;
+  gap: 5.6px;
+}
+.desktop-about-page .products-button {
+  margin: 19px 0 0 18.3px;
+  width: 115.04px;
+  height: 31px;
+  gap: 5.1px;
+}
+.desktop-about-page .services-button {
+  margin: 20px 0 0 18px;
+  width: 114px;
+  gap: 7.5px;
+}
+
+.desktop-about-page .img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Navbar Labels - Combined */
+.desktop-about-page .nav-home-label,
+.desktop-about-page .nav-about-label,
+.desktop-about-page .nav-products-label,
+.desktop-about-page .nav-services-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 700 16px/normal "Inter", Helvetica;
+  color: #f2e8cf;
+  letter-spacing: 0;
+  height: 30px;
+}
+.desktop-about-page .nav-home-label {
+  margin-top: 2px;
+  width: 54px;
+}
+.desktop-about-page .nav-about-label {
+  margin-top: 1px;
+  width: 53.06px;
+}
+.desktop-about-page .nav-products-label {
+  margin-top: 1px;
+  width: 77.9px;
+}
+.desktop-about-page .nav-services-label {
+  width: 74.51px;
+}
+
+/* ============================================
+   TABLET RESPONSIVE STYLES (max-width: 1024px)
+   ============================================ */
+
+@media screen and (max-width: 1024px) {
+  .desktop-about-page {
+    min-height: auto;
+  }
+  .desktop-about-page .about-BG {
+    left: 50%;
+    width: 50%;
+    height: 800px;
+  }
+  .desktop-about-page .rectangle {
+    width: 100%;
+    height: 900px;
+  }
+  .desktop-about-page .illustration {
+    margin-left: 40px;
+  }
+  .desktop-about-page .home-button {
+    margin-left: 150px;
+  }
+  .desktop-about-page .about-button,
+  .desktop-about-page .products-button,
+  .desktop-about-page .services-button {
+    margin-left: 15px;
+  }
+  .desktop-about-page .group {
+    left: 60px;
+    width: 90%;
+    max-width: 650px;
+  }
+  .desktop-about-page .intro-paragraph,
+  .desktop-about-page .mission,
+  .desktop-about-page .tagline {
+    width: 100%;
+  }
+  .desktop-about-page .tagline {
+    white-space: normal;
+  }
+  .desktop-about-page .page-heading {
+    left: 0;
+    width: 100%;
+  }
+  .desktop-about-page .group-6 {
+    left: 60px;
+  }
+  .desktop-about-page .group-4 {
+    left: 320px;
+  }
+  .desktop-about-page .group-2 {
+    left: 580px;
+  }
+  .desktop-about-page .desktop-footer {
+    top: 900px;
+    height: auto;
+    min-height: 400px;
+    padding-bottom: 20px;
+  }
+  .desktop-about-page .icon {
+    left: 40px;
+    width: 200px;
+    height: 150px;
+  }
+  .desktop-about-page .phone,
+  .desktop-about-page .facebook,
+  .desktop-about-page .email,
+  .desktop-about-page .location {
+    top: 200px;
+  }
+  .desktop-about-page .phone {
+    left: 40px;
+  }
+  .desktop-about-page .facebook {
+    left: 100px;
+  }
+  .desktop-about-page .email {
+    left: 160px;
+  }
+  .desktop-about-page .location {
+    left: 220px;
+  }
+  .desktop-about-page .div {
+    left: 320px;
+    width: calc(100% - 340px);
+    height: auto;
+    min-height: 350px;
+  }
+  .desktop-about-page .company {
+    left: 30px;
+  }
+  .desktop-about-page .products {
+    left: 250px;
+  }
+  .desktop-about-page .resources {
+    left: 470px;
+  }
+  .desktop-about-page .lower {
+    top: auto;
+    bottom: 10px;
+    left: 40px;
+  }
+}
+
+/* ============================================
+   MOBILE RESPONSIVE STYLES (max-width: 767px)
+   ============================================ */
+
+@media screen and (max-width: 767px) {
+  /* Main Container */
+  .desktop-about-page {
+    min-height: auto;
+    padding-top: 70px;
+  }
+  /* Hero Section - Mobile */
+  .desktop-about-page .about-BG {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    margin-top: 0;
+  }
+  .desktop-about-page .rectangle {
+    display: none;
+  }
+  /* Navigation Bar - Mobile */
+  .desktop-about-page .deskop-navbar {
+    height: 60px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .desktop-about-page .illustration {
+    margin: 8px 0 0 0;
+    width: 60px;
+    height: 45px;
+  }
+  /* Hide text labels on mobile, show only icons */
+  .desktop-about-page .home-button,
+  .desktop-about-page .about-button,
+  .desktop-about-page .products-button,
+  .desktop-about-page .services-button {
+    margin: 15px 0 0 0;
+    width: auto;
+    gap: 0;
+  }
+  .desktop-about-page .nav-home-label,
+  .desktop-about-page .nav-about-label,
+  .desktop-about-page .nav-products-label,
+  .desktop-about-page .nav-services-label {
+    display: none;
+  }
+  .desktop-about-page .home-button {
+    margin-left: auto;
+  }
+  /* Main Content Section - Mobile */
+  .desktop-about-page .group {
+    position: relative;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+  }
+  .desktop-about-page .page-heading {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: auto;
+    font-size: 24px;
+    padding: 20px 0;
+  }
+  .desktop-about-page .tagline {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 18px;
+    white-space: normal;
+    margin: 20px 0;
+  }
+  .desktop-about-page .intro-paragraph,
+  .desktop-about-page .mission{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 20px 0;
+  }
+  /* Feature Cards - Mobile Stacked Layout */
+  .desktop-about-page .group-6,
+  .desktop-about-page .group-4,
+  .desktop-about-page .group-2 {
+    position: relative;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100%;
+    max-width: 320px;
+    margin: 20px auto;
+    height: auto;
+  }
+  .desktop-about-page .component {
+    width: 100%;
+    height: auto;
+    min-height: 320px;
+  }
+  .desktop-about-page .group-3,
+  .desktop-about-page .group-5,
+  .desktop-about-page .group-7 {
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .desktop-about-page .craftsmanship,
+  .desktop-about-page .wide-selection,
+  .desktop-about-page .quality-style {
+    width: 100%;
+    white-space: normal;
+    font-size: 18px;
+    margin: 20px 0 0 0;
+    left: 0;
+    position: static;
+  }
+  .desktop-about-page .every-piece-is-built,
+  .desktop-about-page .from-sofa-beds-and,
+  .desktop-about-page .we-provide-high {
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+    height: auto;
+    margin: 10px auto;
+    left: 0;
+    position: relative;
+    text-align: justify;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  .desktop-about-page .durable,
+  .desktop-about-page .select,
+  .desktop-about-page .quality {
+    margin: 0 auto 10px auto;
+    display: block;
+    left: 0;
+    position: relative;
+  }
+  /* Footer Section - Mobile */
+  .desktop-about-page .desktop-footer {
+    position: relative;
+    top: 0;
+    margin-top: 40px;
+    height: auto;
+    min-height: 600px;
+    padding: 30px 20px;
+  }
+  .desktop-about-page .icon {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 150px;
+    height: 110px;
+    margin: 0 auto 20px;
+    display: block;
+  }
+  /* Social Icons - Mobile */
+  .desktop-about-page .phone,
+  .desktop-about-page .facebook,
+  .desktop-about-page .email,
+  .desktop-about-page .location {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    margin: 10px 15px;
+  }
+  /* Footer Content Container - Mobile */
+  .desktop-about-page .div {
+    position: relative;
+    left: 0;
+    top: 20px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border: none;
+  }
+  /* Footer Navigation - Mobile Stacked */
+  .desktop-about-page .company,
+  .desktop-about-page .products,
+  .desktop-about-page .resources {
+    position: relative;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .desktop-about-page .company {
+    margin-top: 0;
+  }
+  /* Footer Copyright - Mobile */
+  .desktop-about-page .lower {
+    position: relative;
+    left: 0;
+    top: 20px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .desktop-about-page .copyright-text {
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+  }
+}
+
+/* ============================================
+   SMALL MOBILE ADJUSTMENTS (max-width: 480px)
+   ============================================ */
+
+@media screen and (max-width: 480px) {
+  .desktop-about-page .page-heading {
+    font-size: 20px;
+  }
+  .desktop-about-page .tagline {
+    font-size: 16px;
+  }
+  .desktop-about-page .group-6,
+  .desktop-about-page .group-4,
+  .desktop-about-page .group-2 {
+    max-width: 280px;
+  }
+}
